@@ -1,17 +1,14 @@
 import React from "react";
-import { Sidebar } from "./componentes/Sidebar"
-import { Painel } from "./componentes/painel";
+import { Sidebar } from "../componentes/Sidebar"
+import { Painel } from "../componentes/painel";
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import {CalendarDate} from "./componentes/calendar";
-import {ControlledCarousel} from "./componentes/carousel";
-
-import { GlobalProvider } from "../src/componentes/hooks/globalstate";
+import {CalendarDate} from "../componentes/calendar";
+import {ControlledCarousel} from "../componentes/carousel";
 
 
-export const App = () => {
+export const Home = () => {
   return (
     <>
-     <GlobalProvider>
       <header
         style={{
           backgroundColor: '#4cc9f0',
@@ -27,7 +24,6 @@ export const App = () => {
       <ControlledCarousel></ControlledCarousel>
       <Painel></Painel>
       <CalendarDate></CalendarDate>
-      </GlobalProvider>
     </>
   );
 }

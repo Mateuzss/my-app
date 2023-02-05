@@ -1,0 +1,29 @@
+.Form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+}
+
+
+.div {
+ display: block; 
+ width: 100%; 
+ border: none; 
+ overflow-y: auto; 
+ overflow-x: hidden;
+ background-color: aqua;
+}
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: var(--bs-modal-padding);
+    width: 43%;
+    margin-top: 160px;
+    margin-left: 125px;}
+
+    .modal-content {
+        width: 461px;
+        margin-left: 126px !important;
+        height: 613px;
+    }
